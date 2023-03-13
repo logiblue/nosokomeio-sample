@@ -1,0 +1,686 @@
+:root {
+    --main-font: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: var(--main-font) !important;
+    background-color: #F1F1F1 !important;
+}
+.logo{
+    max-width: 350px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: #000 !important;
+}
+
+
+/* _______________________ */
+/* GENERAL PAGES CLASS - UTILS */
+/* Utilities repeated in multiple sections */
+/* _______________________ */
+/* _______________________ */
+
+
+.page-title{
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+.page-title-medium{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #000;
+}
+
+/* Header___________________________ */
+
+/* CTA BUTTON IN HEADER */
+.cta-header{
+    border: 1px solid #E3E3E3;
+    border-radius: 60px;
+    padding: 12px 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 30px;
+    margin-right: 25px;
+}
+.cta-header img{ margin-right: 5px; margin-top: -3px;}
+
+/* Navbar - Mobile Menu Icon - Toggler */
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+    color: transparent !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    width:50%;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: #000;
+}
+
+
+
+/* Common class in menu items */
+.navigation-item{
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 800 !important;
+    color: #000 !important;
+}
+.horizontal-line-menu{border-top: 2px solid #ececec; width: 100%; height: 1px !important; display: none; padding-bottom: 20px;}
+/* ___________________________ */
+/* Header Responsive Q________________ */
+/* ___________________________ */
+
+@media(max-width:1200px){
+    .navigation__items{
+        width: 100%;
+        justify-content: space-between !important;
+        padding-bottom: 20px;
+    }
+    .horizontal-line-menu{display: block;}
+    .navbar-brand{ width: 100% ; padding:25px 0 !important; margin: 0; }
+    .navigation__container---menu{margin-top: 10px;}
+    .nav-item{background-color: #F1F1F1; margin-bottom: 5px;;}
+}
+
+@media(max-width:600px){
+    .logo{
+        max-width: 100%;
+    }
+
+}
+
+/*__________________ */
+/* _______login_form */
+/* _________________ */
+/* sm, md, lg, xl, and xxl. */
+
+
+.login_form_wrapper .login_form_container{
+    background-color: #fff;
+    padding: 40px 50px 0px 50px;
+    border-radius: 20px;
+}
+.login_form_title{
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.login_remember_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.login_new_user{
+    font-size: 18px;
+    color:#000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login_new_user img{
+    margin-right: 5px;
+}
+.formfield{
+    padding-top: 30px;
+}
+.formfield-label{
+    font-weight: 800;
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.formfield input{
+    background-color: #F5F5F5;
+    padding: 12px 15px;
+    border: 2px solid #D9D9D9 !important;
+    border-radius: 10px !important;
+}
+.form-divider{
+    border-bottom: 2px solid #D8D8D8;
+    width: 100%;
+    height: 2px;
+}
+.login_btn_wrapper{
+    padding: 35px 0;
+}
+.login_btn{
+
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 800;
+    border: 2px solid #FE0000;
+    padding: 22px 80px;
+    border-radius: 60px;
+    position: relative;
+    transition: all .33s ease;
+}
+.login_btn_alt{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 800;
+    border: 2px solid #000;
+    padding: 15px 60px;
+    border-radius: 60px;
+    position: relative;
+    transition: all .33s ease;
+}
+.login_btn::after{
+    content: "";
+    position: absolute;
+    right: 25px;
+    top:36%;
+    width: 50px;
+    height: 20px;
+    background-image: url(./assets/icons/arrow-right-big.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_btn_alt::before{
+    content: "";
+    position: absolute;
+    left: 25px;
+    top:36%;
+    width: 50px;
+    height: 20px;
+    background-image: url(./assets/icons/arrow-left-big.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_btn:hover,
+.login_btn_alt:hover{
+
+    background-color: #000;
+    color: #fff;
+    transition: all .33s ease;
+}
+.login_btn:hover::after,
+.login_btn_alt:hover::before{
+
+    filter: invert(40%) sepia(100%) saturate(7444%) hue-rotate(357deg) brightness(92%) contrast(126%);
+}
+@media(max-width:600px){
+    .login_form_wrapper .login_form_container{
+        padding: 40px 15px 0px 15px;
+    }
+    .login_form_title{
+        font-size: 30px;
+    }
+    .login_remember_box {
+        flex-wrap: wrap;
+    }
+    .login_new_user{
+        padding-bottom: 0;
+    }
+    .form-divider {
+        padding-top: 20px;
+     }
+}
+
+
+
+
+/* _________________*/
+/* ___FOOOTER_______ */
+/* _________________ */
+.footer-logo-container{
+    text-align: center;
+    padding: 30px 0;
+}
+.footer-hr{
+    width:100%;
+    max-width: 850px;
+    height: 2px;
+    background-color: #D9D9D9;
+    margin:0 auto;
+}
+.footer-logo-img{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer-single-card-container{}
+.footer-single-card{
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+}
+.footer-card-icon{}
+.footer-card-heading{}
+.footer-card-subheading{}
+.footer-card-info{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+}
+.footer-card-heading{
+    font-size: 20px;
+    font-weight: 800;
+    color: #000 !important;
+    text-decoration: none !important;
+    word-wrap: break-word;
+
+}
+.footer-card-heading a{ font-size: 20px; color: #000  !important; text-decoration: none;}
+
+
+
+
+/* Footer copyrights */
+.col.text-center.footer-copyrights-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 25px 0 100px 0;
+    margin: 0 auto;
+}
+.footer-copyrights-container-item{
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+/* FOOTER RESPONSIVE */
+@media(max-width:767px){
+    .footer-logo-img{max-width: 350px; width:90%}
+    .footer-single-card{
+        display: flex;
+        align-items: center;
+    }
+    .footer-card-container{
+        padding-left: 12px;
+    }
+    .col.text-center.footer-copyrights-container {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .footer-copyrights-container-item{
+        padding-bottom: 11px;
+    }
+}
+
+
+
+
+
+
+/* ___________________________________________________ */
+/* ______________________SIGNUP PAGE__________________ */
+/* ___________________________________________________ */
+.form-check{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+.form-check-label{
+    margin-left: 10px;
+}
+
+.form-check [type=checkbox] {
+    width: 3rem;
+    height: 3rem;
+    color: #000;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    outline: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: background 300ms;
+    cursor: pointer;
+
+  }
+  
+  /* Pseudo element for check styling */
+  
+  .form-check [type=checkbox]::before {
+    content: "";
+    color: transparent;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 0;
+    background-color: transparent;
+    background-size: contain;
+    box-shadow: inset 0 0 0 1px #CCD3D8;
+  }
+  
+  /* Checked */
+  
+  .form-check [type=checkbox]:checked {
+    background-color: currentcolor;
+  }
+  
+  .form-check [type=checkbox]:checked::before {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+  }
+  
+  /* Disabled */
+  .form-check [type=checkbox]:disabled {
+    background-color: #000;
+    opacity: 0.84;
+    cursor: not-allowed;
+  }
+  
+  
+  /* IE */
+  .form-check [type=checkbox]::-ms-check {
+    content: "";
+    color: transparent;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 0;
+    background-color: transparent;
+    background-size: contain;
+    box-shadow: inset 0 0 0 1px red;
+  }
+  
+  .form-check [type=checkbox]:checked::-ms-check {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+  }
+
+
+
+
+
+  /* ___________________________________________________ */
+/* ______________________WELCOME PAGE__________________ */
+/* ___________________________________________________ */
+
+
+.welcome-single__container{
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+.welcome-single__icon{
+    padding-bottom: 30px;
+}
+.welcome-single__title{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.welcome-single__text{
+    padding-bottom: 15px;
+}
+.welcome-single__button{
+    max-width: 220px;
+    padding-top: 16px;
+    padding-bottom: 14px;;
+    padding-left: 22px;
+    text-align: left;
+}
+  
+
+
+
+
+  /* ___________________________________________________ */
+/* ______________________USER PROFILE__________________ */
+/* ___________________________________________________ */
+
+
+.profile-tab__icon{}
+
+.nav-link{
+    color:#565656 !important ;
+    font-weight: 800 !important;
+}
+
+.navigation-item-icon{margin-right: 5px;}
+.nav-link.active{color: #000 !important; font-weight: 800 !important;}
+.nav-tabs .nav-link.active{
+    background-color: transparent !important;
+    border: none !important;
+}
+.active .navigation-item-icon{
+    filter: invert(23%) sepia(91%) saturate(7261%) hue-rotate(1deg) brightness(92%) contrast(119%);
+}
+
+
+/* USER PROFILE - KRATHSH RANTEBOU */
+.profile-tab-dropdown{
+    padding: 12.5px !important;
+}
+
+
+
+/* DATES */
+.datetimepicker{
+    padding: 12px !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    font-weight: 600 !important;
+}
+
+
+/*stywrapper to give some space*/
+.custom-checkbox {
+    position: relative;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/*stylabel to give some more space*/
+.custom-checkbox label {
+  display: block;
+  padding: 12px 0 12px 48px;
+  padding-left: 70px;
+  font-size: 18px;
+  font-weight: 800;
+
+}
+
+/*styand hide original checkbox*/
+.custom-checkbox input {
+  height: 58px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 58px;
+}
+
+/*poson new box*/
+.custom-checkbox input + label::before {
+  border: 2px solid #D9D9D9;
+  border-radius: 7px;
+  content: "";
+  height: 58px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 58px;
+  background-color: #F5F5F5;
+
+}
+
+/*svgckground styles*/
+.custom-checkbox input + label::after {
+  content: "";
+  opacity: 0;
+  background-image: url("./assets/icons/checkbox-c.svg");
+  background-repeat: no-repeat;
+  height: 21px;
+  width: 30px;
+    position: absolute;
+  left: 15px;
+  top: 17px;
+transition: opacity 0.2s ease-in-out;
+}
+
+/*rev check for 'on' state*/
+.custom-checkbox input:checked + label::after {
+  opacity: 1;
+}
+
+/*focstyles*/
+.custom-checkbox input:focus + label::before {
+  box-shadow: 0 0 0 3px #000;	
+outline: 3px solid transparent; /* For Windows high contrast mode. */
+
+}
+
+
+/* AVAILABLE DATES */
+
+.ava-single-container{
+    background-color: #F9F9F9;
+    padding: 0 !important;
+    border-radius: 20px;
+}
+.ava-single-row{
+    padding: 25px 10px;
+}
+.ava-single-title-container{
+    background-color: #FFFFFF;
+    padding: 26px 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.ava-single-title{
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+}
+.ava-single-time{
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    padding-left: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+.ava-single-place{
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+.ava-single-cost{
+    font-size: 18px;
+    line-height: 20px;
+    color:#000;
+}
+.ava-single-button-container{text-align: right !important;}
+.ava-single-btn{
+    background-color: #fff;
+    transition: all .3s;
+
+}
+.ava-single-btn:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all .3s ease;
+    border: 0 !important;
+}
+.ava-single-container table{
+    margin-bottom: 0 !important;
+}
+
+#ava-table .ava-single-row:last-child {
+    border: 0px solid transparent !important;
+}
+
+.pagination ul li .page-link{
+    color: #000 !important; 
+}

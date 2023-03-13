@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+    <!-- <link rel="shortcut icon" type="image/jpg" href="assets/icons/favicon.svg"/> -->
+    <title>WiseTech</title>
+  </head>
+
+  <body>
+    <div class="navigation__container p-lg-4 ">
+    <nav class="navbar navbar-expand-xl  navbar-light bg-light shadow-lg rounded-3 p-0  ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/wisetech/login.html">
+            <img src="./assets/app-logo.svg" alt="" width="300" height="24" class="logo align-self-center align-text-top">
+          </a>
+          <div class="horizontal-line-menu"></div>
+          <div class="navigation__items d-flex flex-wrap "> <!-- ITEMS -->
+
+       
+            <a href="#" class="text-decoration-none cta-header align-self-center">
+              <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
+              Κλείστε Ραντεβού
+            </a>
+
+            <button class="navbar-toggler border-0 align-self-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+      
+          <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+              <ul class="navbar-nav navigation__container---menu">
+                  <li class="nav-item border-start p-4 pb-4 ">
+                      <a href="#" class="nav-link menu-item navigation-item profile-icon align-self-center">
+                        <img class="navigation-item-icon" src="./assets/icons/header-profile.svg" width="17" height="19">
+                        Προφίλ
+                      </a>
+                  </li>
+                  <li class="nav-item border-start p-4 pb-4 ">
+                      <a href="#" class="nav-link menu-item navigation-item bookings align-self-center">
+                        <img class="navigation-item-icon" src="./assets/icons/header-list.svg" width="21" height="16">
+                        Λίστα Ραντεβού
+                      </a>
+                  </li>
+                  <li class="nav-item border-start p-4 pb-4 ">
+                      <a href="#" class="nav-link menu-item navigation-item account align-self-center">
+                        <img class="navigation-item-icon align-self-center" src="./assets/icons/header-logout.svg" width="20" height="18">
+                        Απoσύνδεση
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </div><!-- Navigation items-->
+        </div>
+      </nav>
+    </div> <!-- Navigation Container_end -->
+
+
+   
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mt-5 pb-2">
+      <h2 class=" page-title">  Προφίλ Χρήστη</h2>
+    </div>
+    <hr class=" border-2 border-top border-dark pb-3">
+  </div>
+    <!-- {property}{sides}-{breakpoint}-{size} -->
+</div>
+
+
+
+<!-- TABS NAVIGATION -->
+
+<div class="container">
+  <div class="row">
+    <ul class="nav nav-tabs profile-nav-tabs " id="myTab" role="tablist">
+      <li class="nav-item profile-nav-item" role="presentation">
+        <a class="nav-link active" id="profile-booking" >
+          <img class="navigation-item-icon align-self-center profile-tab__icon" src="./assets/icons/profile-booking.svg" width="20" height="18">Κράτηση Ραντεβού
+        </a>
+      </li>
+      <li class="nav-item profile-nav-item" role="presentation">
+        <a class="nav-link" id="profile-list">
+          <img class="navigation-item-icon align-self-center profile-tab__icon" src="./assets/icons/profile-list.svg" width="20" height="18">Λίστα Ραντεβού
+        </a>
+      </li>
+
+      <li class="nav-item profile-nav-item" role="presentation">
+        <a class="nav-link" id="profile-contacts" >
+          <img class="navigation-item-icon align-self-center" src="./assets/icons/profile-user.svg" width="20" height="18">Προφίλ Χρήστη
+        </a>
+      </li>
+      <li class="nav-item profile-nav-item" role="presentation">
+        <a class="nav-link" id="profile-contacts">
+          <img class="navigation-item-icon align-self-center" src="./assets/icons/profile-contacts.svg" width="20" height="18">Επαφές
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- ΜΑΙΝ PAGE CONTAINER -->
+            <div class="login_form_wrapper pb-3">
+              <div class="container">
+        
+                <div class="row  pb-3 mt-5">
+                  <div class="col-md-12 mx-auto  login_form_container shadow " >
+        
+                    <h3 class="page-title-medium pb-1 ">Επιλέξτε τμήμα & ιατρείο</h3>
+                    <p class="w-75">Επιλέξτε το τμήμα  και το ιατρείο που θα θέλατε να κλείσετε ραντεβού. Τα υποχρεωτικά πεδία επισημαίνονται με αστερίσκο *</p>
+        
+                    <!-- login_wrapper -->
+                    <div class="login_wrapper d-flex flex-wrap form-group row">
+                       
+                        <div class="formfield col-sm-6">
+                          <label for="email2" class="formfield-label">Τμήμα*</label>
+                          <div class="form-group i-email">
+                            <select class="form-select profile-tab-dropdown" aria-label="Default select example">
+                              <option selected></option>
+                              <option value="1">Χειρουργική Κλινική</option>
+                              <option value="2">Παθολογική Κλινική</option>
+                              <option value="3">Καρδιολογική Κλινική</option>
+                              <option value="4">Παιδιατρική Κλινική</option>
+                            </select>                  
+                          </div>
+                        </div>
+                        <div class="formfield col-sm-6">
+                          <label for="email2" class="formfield-label">Ιατρείο*</label>
+                          <div class="form-group i-email">
+                            <select class="form-select profile-tab-dropdown" aria-label="Default select example">
+                              <option selected></option>
+                              <option value="1">Αγγειοχειρουργικό</option>
+                              <option value="2">Νευροχειρουργική</option>
+                              <option value="3">Ορθοπεδική</option>
+                              <option value="4">Μαιευτική - Γυναικολογική</option>
+                              <option value="5">Ουρολογική</option>
+                              <option value="6">Οφθαλμολογική</option>
+                              <option value="7">Αναισθησιολογικό</option>
+                              <option value="8">Μονάδα Ω.Ρ.Λ.</option>
+                              <option value="9">Μονάδα Οδοντιατρικού</option>
+                            </select>                  
+                          </div>
+                        </div>
+                        <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
+        
+        
+        
+                        <h3 class="page-title-medium pb-1">Επιλέξτε Ημερομηνία</h3>
+                        <p class="w-75">Επιλέξτε τις ημερομηνικές που επιθυμείτε. Τα απογευματινά ραντεβού ενδέχεται να έχουν χρέωση.</p>
+            
+        
+                        <!-- DATES CHECKBOX -->
+                     <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="custom-checkbox">
+                            <input id="a11y-issue-3" name="a11y-issues" type="checkbox" value="html-markup">
+                            <label for="a11y-issue-3">Πρωινά Ραντεβού</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="custom-checkbox">
+                            <input id="a11y-issue-4" name="a11y-issues" type="checkbox" value="html-markup">
+                            <label for="a11y-issue-4">Απογευματινά Ραντεβού</label>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                        
+        
+        
+                        <!-- DATES CONTAINER -->
+                        <div class="container mt-5 pb-5">
+                          <div class="row justify-content-center">
+                              <div class="col-sm-6 formfield">
+                                  <label for="startDate" class="formfield-label">Από</label>
+                                  <input id="startDate" class="form-control datetimepicker" type="date"  value="{{ start_date }}"/>
+                                  <span id="startDateSelected"></span>
+                              </div>
+                              <div class="col-sm-6 formfield">
+                                  <label for="endDate" class="formfield-label">Έως</label>
+                                  <input id="endDate" class="form-control datetimepicker" type="date" />
+                                  <span id="endDateSelected"></span>
+                              </div>
+                          </div>
+                        </div>             
+                    
+                    </div>
+                    <!-- /.login_wrapper-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+<!-- TABS NAVIGATION END -->
+
+      <footer>
+
+
+      <div class="footer-logo-container">
+        <div class="footer-hr"></div>
+        <img src="./assets/app-logo.svg" alt="" width="400" height="24" class="logo align-self-center footer-logo-img">
+      </div>
+
+<div class="container">
+  <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
+</div>
+
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="footer-single-card  ">
+                <img class="footer-card-icon" src="./assets/icons/footer-phone.svg" alt="Phone"width="27" height="30" >
+                <div class="footer-card-container">
+                  <p class="footer-card-info">Τηλέφωνο</p>
+                  <h4 class="footer-card-heading">+30 2513 501 100</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="footer-single-card  ">
+                <img class="footer-card-icon" src="./assets/icons/footer-email.svg" alt="Phone"width="35" height="31" >
+                  <div class="footer-card-container">
+                    <p class="footer-card-info">Email</p>
+                    <h4 class="footer-card-heading">info@domain.com</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="footer-single-card  ">
+                <img class="footer-card-icon" src="./assets/icons/footer-phone.svg" alt="Phone"width="27" height="30" >
+                  <div class="footer-card-container"> 
+                    <p class="footer-card-info">Website</p>
+                    <h4 class="footer-card-heading">kavalahospital.com</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+              <div class="footer-single-card  ">
+                <img class="footer-card-icon" src="./assets/icons/footer-phone.svg" alt="Phone"width="27" height="30" >
+                  <div class="footer-card-container">
+                    <p class="footer-card-info">Διεύθυνση</p>
+                    <h4 class="footer-card-heading"><a href="https://goo.gl/maps/JE39wNhfYhoGHHgMA">Βρείτε μας στον Χάρτη</a></h4>
+                  </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center footer-copyrights-container">
+              <a class="footer-copyrights-container-item"  href="#">Προστασία δεδομένων</a>
+              <a class="footer-copyrights-container-item"  href="#">Όροι χρήσης</a>
+              <a class="footer-copyrights-container-item"  href="#">Ρυθμίσεις Cookies</a>
+
+            </div>
+          </div>
+        </div>
+
+
+      </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>    
+        <script src="./main.js"></script>
+    </body>
+  </html>
+
