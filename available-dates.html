@@ -23,7 +23,7 @@
           <div class="horizontal-line-menu"></div>
           <div class="navigation__items d-flex flex-wrap "> <!-- ITEMS -->
 
-       
+
             <a href="#" class="text-decoration-none cta-header align-self-center">
               <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
               Κλείστε Ραντεβού
@@ -34,7 +34,7 @@
               <span class="toggler-icon middle-bar"></span>
               <span class="toggler-icon bottom-bar"></span>
             </button>
-      
+
           <div class="collapse navbar-collapse justify-content-end" id="navmenu">
               <ul class="navbar-nav navigation__container---menu">
                   <li class="nav-item border-start p-4 pb-4 ">
@@ -63,7 +63,7 @@
     </div> <!-- Navigation Container_end -->
 
 
-   
+
 
 
         <div class="container">
@@ -83,10 +83,10 @@
                 <hr class=" border-2 border-top border-dark mt-3">
 
                 <div class="col-md-6">
-                <div class="custom-checkbox">
-                        <input id="a11y-issue-3" name="a11y-issues" type="checkbox" value="html-markup">
-                        <label for="a11y-issue-3">Πρωινά Ραντεβού</label>
-                </div>
+                  <div class="custom-checkbox">
+                          <input id="a11y-issue-3" name="a11y-issues" type="checkbox" value="html-markup">
+                          <label for="a11y-issue-3">Πρωινά Ραντεβού(Δωρεάν)</label>
+                  </div>
                 </div>
                 <div class="col-md-6">
                     <div class="custom-checkbox">
@@ -97,32 +97,130 @@
                 <hr class=" border-2 border-top border-dark pb-3 mt-3">
 
             </div>
+         </div>
+
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">ΠΛΗΡΟΦΟΡΙΕΣ ΡΑΝΤΕΒΟΥ</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ava-modal-info">
+                      <div class="ava-modal-info-item">Ημερομηνία: <strong>02/11/2023</strong></div>
+                      <div class="ava-modal-info-item">Ώρα: <strong>18:30</strong></div>
+                      <div class="ava-modal-info-item">Τμήμα: <strong>Παθολογικό</strong></div>
+                      <div class="ava-modal-info-item">Ιατρείο: <strong>Α' Παθολογική</strong></div>
+                      <div class="ava-modal-info-item">Κόστος: <strong>€50.00</strong></div>
+                    </div>
+
+                    <hr class=" col-sm-12 border-1 border-top border-dark mt-3">
+
+                    <div class="ava-modal-contact">
+                      <div class="login_wrapper d-flex flex-wrap form-group row">
+
+                        <div class="formfield ">
+                          <label for="email2" class="formfield-label">Για την επαφή μου*</label>
+                          <div class="form-group i-email">
+                            <select class="form-select profile-tab-dropdown" aria-label="Default select example">
+                              <option selected></option>
+                              <option value="1">Βob Marley</option>
+                              <option value="2">Stevie Wonder</option>
+                              <option value="3">Dave Mathews</option>
+                              <option value="4">Steven Wilson</option>
+                            </select>
+                          </div>
+                        </div>
+                
+                        <hr class=" col-sm-12 border-1 border-top border-dark mt-5">
+                      </div>
+                    </div>
+
+                    <div class="ava-modal-reminder">
+                      <div class="custom-checkbox d-flex align-items-center">
+                        <input id="modal-reminder-checkbox" name="a11y-issues" type="checkbox" value="html-markup">
+                        <label for="modal-reminder-checkbox">Ειδοποίηση με Email μια μέρα πριν το Ραντεβού</label>
+                      </div>
+                    </div>
+                </div>
+                <div class="ava-modal-footer">
+                  <div class="login_btn_wrapper">
+                    <a href="#" class="login_btn"> Υποβολή </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
 
+<!-- Modal 2 - NOT AVAILABLE DATES-->
+<div class="modal fade" id="notAvailable" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/icons/modal-cancel.svg" width="100" height="100" alt="No Available Date">
+        <h3 class="pt-3 "><strong>Αποτυχία καταχώρησης ραντεβού</strong></h3> 
+        <p>Η καταχώρηση του ραντεβού σας απέτυχε. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat tempor leo a dictum. In malesuada tortor ac augue pharetra aliquam. Συνηθισμένοι λόγοι για την αποτυχία είναι οι ακόλουθοι</p>
+        <ul>
+          <li>H ώρα δεν είναι διαθέσιμη</li>
+          <li>H Ημέρα δεν είναι διαθέσιμη</li>
+          <li>Το ιατρείο δεν είναι διαθέσιμο</li>
+      </ul>   
+      <p class="pt-3">Παρακαλούμε δοκιμάστε με διαφορετική ώρα ή ημέρα</p>
+      </div>
+      <div class="ava-modal-footer">
+        <div class="login_btn_wrapper">
+          <a href="#" class="login_btn"> Αναζήτηση Ξανά </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-
+          
 
 <div class="container">
     <div class="row">
-        <div class="ava-single-container mb-5">
+        <div class="ava-single-container shadow-lg mb-5">
             <div class="ava-single-title-container">
                 <h3 class="ava-single-title">Δευτέρα 14 Δεκεμβρίου 2023</h3>
             </div>
            <div class="table-responsive">
 
-            
+
             <table class="table align-middle" id="ava-table" >
                  <tbody>
+                  <!-- The classes are named using the format 
+                  {property}{sides}-{size} for xs and 
+                  {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl. -->
+
                   <tr class="ava-single-row">
-                    <td class="ava-single-time">08:40πμ</td>
+                    <td class="ava-single-time">08:40πμ </td>
                     <td class="ava-single-place">Παθολογικό ιατρείο</td>
                     <td class="ava-single-cost">100.00€</td>
                     <td class="ava-single-button-container">
-                        <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
-                            <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
-                            Κλείστε Ραντεβού
-                          </a>              
+                      <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
+                        Κλείστε Ραντεβού
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="ava-single-row">
+                    <td class="ava-single-time">08:30πμ</td>
+                    <td class="ava-single-place">Παθολογικό ιατρείο</td>
+                    <td class="ava-single-cost">100.00€</td>
+                    <td class="ava-single-button-container">
+                      <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end" data-bs-toggle="modal" data-bs-target="#notAvailable">
+                        <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
+                        Κλείστε Ραντεβού
+                      </a>
                     </td>
                   </tr>
                   <tr class="ava-single-row">
@@ -130,31 +228,20 @@
                     <td class="ava-single-place">Παθολογικό ιατρείο</td>
                     <td class="ava-single-cost">100.00€</td>
                     <td class="ava-single-button-container">
-                        <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
+                        <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
-                    </td>
-                  </tr>
-                  <tr class="ava-single-row">
-                    <td class="ava-single-time">08:40πμ</td>
-                    <td class="ava-single-place">Παθολογικό ιατρείο</td>
-                    <td class="ava-single-cost">100.00€</td>
-                    <td class="ava-single-button-container">
-                        <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
-                            <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
-                            Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                     <tr class="ava-single-row">
-                        <td class="ava-single-time">08:40πμ</td>
+                        <td class="ava-single-time">08:50πμ</td>
                         <td class="ava-single-place">Παθολογικό ιατρείο</td>
                         <td class="ava-single-cost">100.00€</td>
                         <td class="ava-single-button-container">
-                            <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
-                                <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
-                                Κλείστε Ραντεβού
-                              </a>              
+                          <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
+                            Κλείστε Ραντεβού
+                          </a>
                         </td>
                       </tr>
                 </tbody>
@@ -166,56 +253,56 @@
 
 
     <div class="row">
-        <div class="ava-single-container mb-5">
+        <div class="ava-single-container shadow-lg mb-5">
             <div class="ava-single-title-container">
                 <h3 class="ava-single-title">Τρίτη 15 Δεκεμβρίου 2023</h3>
             </div>
             <div class="table-responsive">
 
-            
+
             <table class="table align-middle" id="ava-table">
                  <tbody>
                   <tr class="ava-single-row">
-                    <td class="ava-single-time">08:40πμ</td>
+                    <td class="ava-single-time">05:20πμ</td>
                     <td class="ava-single-place">Παθολογικό ιατρείο</td>
                     <td class="ava-single-cost">100.00€</td>
                     <td class="ava-single-button-container">
                         <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                   </tr>
                   <tr class="ava-single-row">
-                    <td class="ava-single-time">08:40πμ</td>
+                    <td class="ava-single-time">06:30πμ</td>
                     <td class="ava-single-place">Παθολογικό ιατρείο</td>
                     <td class="ava-single-cost">100.00€</td>
                     <td class="ava-single-button-container">
                         <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                   </tr>
                   <tr class="ava-single-row">
-                    <td class="ava-single-time">08:40πμ</td>
+                    <td class="ava-single-time">07:40πμ</td>
                     <td class="ava-single-place">Παθολογικό ιατρείο</td>
                     <td class="ava-single-cost">100.00€</td>
                     <td class="ava-single-button-container">
                         <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                     <tr class="ava-single-row">
-                        <td class="ava-single-time">08:40πμ</td>
+                        <td class="ava-single-time">09:50πμ</td>
                         <td class="ava-single-place">Παθολογικό ιατρείο</td>
                         <td class="ava-single-cost">100.00€</td>
                         <td class="ava-single-button-container">
                             <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                                 <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                                 Κλείστε Ραντεβού
-                              </a>              
+                              </a>
                         </td>
                       </tr>
                 </tbody>
@@ -229,13 +316,13 @@
 
 
     <div class="row">
-        <div class="ava-single-container">
+        <div class="ava-single-container shadow-lg">
             <div class="ava-single-title-container">
                 <h3 class="ava-single-title">Τετάρτη 16 Δεκεμβρίου 2023</h3>
             </div>
             <div class="table-responsive">
 
-            
+
             <table class="table align-middle" id="ava-table">
                  <tbody>
                   <tr class="ava-single-row">
@@ -246,7 +333,7 @@
                         <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                   </tr>
                   <tr class="ava-single-row">
@@ -257,7 +344,7 @@
                         <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                   </tr>
                   <tr class="ava-single-row">
@@ -268,7 +355,7 @@
                         <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                             <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                             Κλείστε Ραντεβού
-                          </a>              
+                          </a>
                     </td>
                     <tr class="ava-single-row">
                         <td class="ava-single-time">08:40πμ</td>
@@ -278,7 +365,7 @@
                             <a href="#" class="ava-single-btn text-decoration-none cta-header align-self-end">
                                 <img src="./assets/icons/rantevou-24x23.svg" width="23" height="24">
                                 Κλείστε Ραντεβού
-                              </a>              
+                              </a>
                         </td>
                       </tr>
                 </tbody>
@@ -360,7 +447,7 @@
             <div class="col-xl-3 col-lg-6 col-md-6">
               <div class="footer-single-card  ">
                 <img class="footer-card-icon" src="./assets/icons/footer-phone.svg" alt="Phone"width="27" height="30" >
-                  <div class="footer-card-container"> 
+                  <div class="footer-card-container">
                     <p class="footer-card-info">Website</p>
                     <h4 class="footer-card-heading">kavalahospital.com</h4>
                   </div>
@@ -373,7 +460,7 @@
                     <p class="footer-card-info">Διεύθυνση</p>
                     <h4 class="footer-card-heading"><a href="https://goo.gl/maps/JE39wNhfYhoGHHgMA">Βρείτε μας στον Χάρτη</a></h4>
                   </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -393,8 +480,7 @@
         <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <script src="./main.js"></script>
     </body>
   </html>
-

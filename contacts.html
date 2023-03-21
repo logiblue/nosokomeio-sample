@@ -70,7 +70,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 mt-5 pb-2">
-      <h2 class=" page-title">  Προφίλ Χρήστη</h2>
+      <h2 class=" page-title">Επαφές</h2>
     </div>
     <hr class=" border-2 border-top border-dark pb-3">
   </div>
@@ -96,12 +96,12 @@
       </li>
 
       <li class="nav-item profile-nav-item" role="presentation">
-        <a class="nav-link active d-flex align-items-center justify-content-center" id="profile-contacts" >
+        <a class="nav-link  d-flex align-items-center justify-content-center" id="profile-contacts" >
           <img class="navigation-item-icon align-self-center" src="./assets/icons/profile-user.svg" width="20" height="18">Προφίλ Χρήστη
         </a>
       </li>
       <li class="nav-item profile-nav-item" role="presentation">
-        <a class="nav-link d-flex align-items-center justify-content-center" id="profile-contacts">
+        <a class="nav-link active d-flex align-items-center justify-content-center" id="profile-contacts">
           <img class="navigation-item-icon align-self-center" src="./assets/icons/profile-contacts.svg" width="20" height="18">Επαφές
         </a>
       </li>
@@ -123,10 +123,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-           
+
 				<!-- login_wrapper -->
         <div class="login_wrapper d-flex flex-wrap form-group row">
-               
+
           <div class="formfield col-sm-12">
             <label for="email2" class="formfield-label">Όνομα*</label>
             <div class="form-group i-email">
@@ -160,11 +160,11 @@
             <div class="form-group i-email">
               <input type="email" class="form-control" required="" id="phone2" >
             </div>
-          </div>      
+          </div>
       </div>
       <!-- /.login_wrapper-->
 
-     
+
         </div>
         <div class="ava-modal-footer">
           <div class="login_btn_wrapper">
@@ -179,96 +179,75 @@
             <div class="login_form_wrapper pb-3">
               <div class="container">
 
-                <div class="row  pb-3 mt-5">
-                  <div class="col-md-12 mx-auto  login_form_container shadow " >
+                <div class="row  pb-3 mt-5 ">
 
-
-                    <div class="profile-section"> <!--Προσωπικά Στοιχεία -->
+                  <div class="col-md-12 mb-5 mx-auto  login_form_container shadow " ><!--single contact card -->
+                    <div class="profile-section">
                       <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-1 ">Προσωπικά στοιχεία</h3>
-                        <a class="profile-section-link" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
+                        <h3 class="page-title-medium pb-1 ">Μαρία Μολασιώτη</h3>
+                          <div class="contact-edit-butttons d-flex">
+                            <a class="profile-section-link mx-3" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
+                            <a class="profile-section-link" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/delete-account-small.svg" width="22" height="23" alt=""><span>Διαγραφή</span></a>
+                          </div>
                       </div>
-                      <div class="profile-section-info pt-3">
-                        <p class="profile-section-info-single">Όνομα: <strong>Βασίλης</strong></p>
-                        <p class="profile-section-info-single">Επίθετο: <strong>Παπακωνσταντίνου</strong></p>
+                      <div class="profile-section-info pt-3 pb-5">
+                        <p class="profile-section-info-single">Όνομα: <strong>Μαρία </strong></p>
+                        <p class="profile-section-info-single">Επίθετο: <strong>Μολασιώτη</strong></p>
                         <p class="profile-section-info-single">ΑΜΚΑ: <strong>12351259215</strong></p>
-                        <p class="profile-section-info-single">Εmail: <strong>vasillispapa@gmail.com</strong></p>
+                        <p class="profile-section-info-single">Εmail: <strong>molasiotimaria@gmail.com</strong></p>
                         <p class="profile-section-info-single">Tηλέφωνο: <strong>6984040404</strong></p>
                       </div>
-                      <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
                     </div>
-                    
-
-
-
-
-                    <div class="profile-section"> <!-- Στοιχεία εισόδου -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-1 "> Στοιχεία εισόδου</h3>
-                        <a class="profile-section-link" href="#"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
-                      </div>
-                      <div class="profile-section-info pt-3">
-                        <p class="profile-section-info-single">Εmail: <strong>vasillispapa@gmail.com</strong></p>
-                        <p class="profile-section-info-single">Κωδικός Πρόσβασης: <strong>***************</strong></p>
-                        <a class="profile-section-info-password-link" href="#"><span>Αλλαγή Κωδικόυ</span></a>
-                      </div>
-                      <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
-                    </div>
-
-
-
-
-
-                    <div class="profile-section"> <!-- Rυθμίσεις Ειδοποιήσεων -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-1 "> Ρυθμίσεις Ειδοποιήσεων</h3>
-                        <a class="profile-section-link" href="#"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
-                      </div>
-                      <div class="profile-section-info pt-3">
-                        <p class="profile-section-info-single">Εmail ειδοποίησης: <strong>vasillispapa@gmail.com</strong></p>
-                        <p class="profile-section-info-single">Ειδοποίηση: <strong>1 ημέρα πριν</strong></p>
-                      </div>
-                      <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
-                    </div>
-
-
-
-                    <div class="profile-section pb-5"> <!-- Προσωπικά δεδομένα -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-5 "> Διαχείρηση προσωπικών δεδομένων</h3>
-                      </div>
-                
-                      <div class="container">
-                        <div class="row">
-                        <div class="col">
-                          <a class="profile-section-link" href="#"><img src="./assets/icons/delete-account-small.svg" width="24" height="24" alt=""><span>Διαγραφή Λογαριασμόυ</span></a>
-                        </div>
-                     
-
-
-                        <div class="col">
-                          <a class="profile-section-link" href="#"><img src="./assets/icons/donwload-pdf.svg" width="22" height="23" alt=""><span>Λήψη προσωπικών δεδομένων</span></a>
-                        </div>
-
-
-                        <div class="col">
-                          <a class="profile-section-link" href="#"><img src="./assets/icons/privacy.svg" width="23" height="26" alt=""><span>Πολιτική Απορρήτου</span></a>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-
-
                   </div>
+
+
+                  <div class="col-md-12 mb-5 mx-auto  login_form_container shadow " ><!--single contact card -->
+                    <div class="profile-section">
+                      <div class="profile-section-header d-flex justify-content-between">
+                        <h3 class="page-title-medium pb-1 ">Μαρία Μολασιώτη</h3>
+                          <div class="contact-edit-butttons d-flex">
+                            <a class="profile-section-link mx-3" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
+                            <a class="profile-section-link" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/delete-account-small.svg" width="22" height="23" alt=""><span>Διαγραφή</span></a>
+                          </div>
+                      </div>
+                      <div class="profile-section-info pt-3 pb-5">
+                        <p class="profile-section-info-single">Όνομα: <strong>Μαρία </strong></p>
+                        <p class="profile-section-info-single">Επίθετο: <strong>Μολασιώτη</strong></p>
+                        <p class="profile-section-info-single">ΑΜΚΑ: <strong>12351259215</strong></p>
+                        <p class="profile-section-info-single">Εmail: <strong>molasiotimaria@gmail.com</strong></p>
+                        <p class="profile-section-info-single">Tηλέφωνο: <strong>6984040404</strong></p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-12 mb-5 mx-auto  login_form_container shadow " ><!--single contact card -->
+                    <div class="profile-section">
+                      <div class="profile-section-header d-flex justify-content-between">
+                        <h3 class="page-title-medium pb-1 ">Μαρία Μολασιώτη</h3>
+                          <div class="contact-edit-butttons d-flex">
+                            <a class="profile-section-link mx-3" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
+                            <a class="profile-section-link" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/delete-account-small.svg" width="22" height="23" alt=""><span>Διαγραφή</span></a>
+                          </div>
+                      </div>
+                      <div class="profile-section-info pt-3 pb-5">
+                        <p class="profile-section-info-single">Όνομα: <strong>Μαρία </strong></p>
+                        <p class="profile-section-info-single">Επίθετο: <strong>Μολασιώτη</strong></p>
+                        <p class="profile-section-info-single">ΑΜΚΑ: <strong>12351259215</strong></p>
+                        <p class="profile-section-info-single">Εmail: <strong>molasiotimaria@gmail.com</strong></p>
+                        <p class="profile-section-info-single">Tηλέφωνο: <strong>6984040404</strong></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="#" class="contact-btn">  </a>
+
                 </div>
               </div>
             </div>
       <footer>
-
-
       <div class="footer-logo-container">
-        <div class="footer-hr"></div>
         <img src="./assets/app-logo.svg" alt="" width="400" height="24" class="logo align-self-center footer-logo-img">
       </div>
 

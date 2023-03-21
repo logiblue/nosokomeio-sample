@@ -70,7 +70,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10 mt-5 pb-2">
-      <h2 class=" page-title">  Προφίλ Χρήστη</h2>
+      <h2 class=" page-title">  Κράτηση Ραντεβού</h2>
     </div>
     <hr class=" border-2 border-top border-dark pb-3">
   </div>
@@ -85,7 +85,7 @@
   <div class="row">
     <ul class="nav nav-tabs profile-nav-tabs " id="myTab" role="tablist">
       <li class="nav-item profile-nav-item" role="presentation">
-        <a class="nav-link " id="profile-booking" >
+        <a class="nav-link active" id="profile-booking" >
           <img class="navigation-item-icon align-self-center profile-tab__icon" src="./assets/icons/profile-booking.svg" width="20" height="18">Κράτηση Ραντεβού
         </a>
       </li>
@@ -96,7 +96,7 @@
       </li>
 
       <li class="nav-item profile-nav-item" role="presentation">
-        <a class="nav-link active d-flex align-items-center justify-content-center" id="profile-contacts" >
+        <a class="nav-link d-flex align-items-center justify-content-center" id="profile-contacts" >
           <img class="navigation-item-icon align-self-center" src="./assets/icons/profile-user.svg" width="20" height="18">Προφίλ Χρήστη
         </a>
       </li>
@@ -114,156 +114,108 @@
 
 
 
-   <!-- Modal -->
-   <div class="modal fade" id="profile-section-personal-info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Προσωπικά στοχεία</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-           
-				<!-- login_wrapper -->
-        <div class="login_wrapper d-flex flex-wrap form-group row">
-               
-          <div class="formfield col-sm-12">
-            <label for="email2" class="formfield-label">Όνομα*</label>
-            <div class="form-group i-email">
-              <input type="email" class="form-control" required="" id="name" >
-            </div>
-          </div>
-
-          <div class="formfield col-sm-12">
-            <label for="email2" class="formfield-label">Επίθετο*</label>
-            <div class="form-group i-email">
-              <input type="email" class="form-control" required="" id="surname" >
-            </div>
-          </div>
-
-          <div class="formfield col-sm-12">
-            <label for="email2" class="formfield-label">ΑΜΚΑ*</label>
-            <div class="form-group i-email">
-              <input type="email" class="form-control" required="" id="amka" >
-            </div>
-          </div>
-
-          <div class="formfield col-sm-12">
-            <label for="email2" class="formfield-label">Εmail*</label>
-            <div class="form-group i-email">
-              <input type="email" class="form-control" required="" id="email2" >
-            </div>
-          </div>
-
-          <div class="formfield col-sm-12">
-            <label for="email2" class="formfield-label">Tηλέφωνο*</label>
-            <div class="form-group i-email">
-              <input type="email" class="form-control" required="" id="phone2" >
-            </div>
-          </div>      
-      </div>
-      <!-- /.login_wrapper-->
-
-     
-        </div>
-        <div class="ava-modal-footer">
-          <div class="login_btn_wrapper">
-            <a href="#" class="login_btn"> Αποθήκευση </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+<!-- ΜΑΙΝ PAGE CONTAINER -->
             <div class="login_form_wrapper pb-3">
               <div class="container">
 
                 <div class="row  pb-3 mt-5">
                   <div class="col-md-12 mx-auto  login_form_container shadow " >
 
+                    <h3 class="page-title-medium pb-1 ">Επιλέξτε τμήμα & ιατρείο</h3>
+                    <p class="w-75">Επιλέξτε το τμήμα  και το ιατρείο που θα θέλατε να κλείσετε ραντεβού. Τα υποχρεωτικά πεδία επισημαίνονται με αστερίσκο *</p>
 
-                    <div class="profile-section"> <!--Προσωπικά Στοιχεία -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-1 ">Προσωπικά στοιχεία</h3>
-                        <a class="profile-section-link" href="#" data-bs-toggle="modal" data-bs-target="#profile-section-personal-info"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
+                    <!-- login_wrapper -->
+                    <div class="login_wrapper d-flex flex-wrap form-group row">
+
+                        <div class="formfield col-sm-6">
+                          <label for="email2" class="formfield-label">Τμήμα*</label>
+                          <div class="form-group i-email">
+                            <select class="form-select profile-tab-dropdown" aria-label="Default select example">
+                              <option selected></option>
+                              <option value="1">Χειρουργική Κλινική</option>
+                              <option value="2">Παθολογική Κλινική</option>
+                              <option value="3">Καρδιολογική Κλινική</option>
+                              <option value="4">Παιδιατρική Κλινική</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="formfield col-sm-6">
+                          <label for="email2" class="formfield-label">Ιατρείο*</label>
+                          <div class="form-group i-email">
+                            <select class="form-select profile-tab-dropdown" aria-label="Default select example">
+                              <option selected></option>
+                              <option value="1">Αγγειοχειρουργικό</option>
+                              <option value="2">Νευροχειρουργική</option>
+                              <option value="3">Ορθοπεδική</option>
+                              <option value="4">Μαιευτική - Γυναικολογική</option>
+                              <option value="5">Ουρολογική</option>
+                              <option value="6">Οφθαλμολογική</option>
+                              <option value="7">Αναισθησιολογικό</option>
+                              <option value="8">Μονάδα Ω.Ρ.Λ.</option>
+                              <option value="9">Μονάδα Οδοντιατρικού</option>
+                            </select>
+                          </div>
+                        </div>
+                        <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
+
+
+
+                        <h3 class="page-title-medium pb-1">Επιλέξτε Ημερομηνία</h3>
+                        <p class="w-75">Επιλέξτε τις ημερομηνικές που επιθυμείτε. Τα απογευματινά ραντεβού ενδέχεται να έχουν χρέωση.</p>
+
+
+                        <!-- DATES CHECKBOX -->
+                     <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="custom-checkbox">
+                            <input id="a11y-issue-3" name="a11y-issues" type="checkbox" value="html-markup">
+                            <label for="a11y-issue-3">Πρωινά Ραντεβού</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="custom-checkbox">
+                            <input id="a11y-issue-4" name="a11y-issues" type="checkbox" value="html-markup">
+                            <label for="a11y-issue-4">Απογευματινά Ραντεβού</label>
+                          </div>
+                        </div>
                       </div>
-                      <div class="profile-section-info pt-3">
-                        <p class="profile-section-info-single">Όνομα: <strong>Βασίλης</strong></p>
-                        <p class="profile-section-info-single">Επίθετο: <strong>Παπακωνσταντίνου</strong></p>
-                        <p class="profile-section-info-single">ΑΜΚΑ: <strong>12351259215</strong></p>
-                        <p class="profile-section-info-single">Εmail: <strong>vasillispapa@gmail.com</strong></p>
-                        <p class="profile-section-info-single">Tηλέφωνο: <strong>6984040404</strong></p>
-                      </div>
-                      <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
-                    </div>
-                    
+                     </div>
 
-
-
-
-                    <div class="profile-section"> <!-- Στοιχεία εισόδου -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-1 "> Στοιχεία εισόδου</h3>
-                        <a class="profile-section-link" href="#"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
-                      </div>
-                      <div class="profile-section-info pt-3">
-                        <p class="profile-section-info-single">Εmail: <strong>vasillispapa@gmail.com</strong></p>
-                        <p class="profile-section-info-single">Κωδικός Πρόσβασης: <strong>***************</strong></p>
-                        <a class="profile-section-info-password-link" href="#"><span>Αλλαγή Κωδικόυ</span></a>
-                      </div>
-                      <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
-                    </div>
-
-
-
-
-
-                    <div class="profile-section"> <!-- Rυθμίσεις Ειδοποιήσεων -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-1 "> Ρυθμίσεις Ειδοποιήσεων</h3>
-                        <a class="profile-section-link" href="#"><img src="./assets/icons/edit-reservation.svg" width="22" height="23" alt=""><span>Επεξεργασία</span></a>
-                      </div>
-                      <div class="profile-section-info pt-3">
-                        <p class="profile-section-info-single">Εmail ειδοποίησης: <strong>vasillispapa@gmail.com</strong></p>
-                        <p class="profile-section-info-single">Ειδοποίηση: <strong>1 ημέρα πριν</strong></p>
-                      </div>
-                      <hr class=" col-sm-12 border-2 border-top border-dark mt-5 mb-5">
-                    </div>
-
-
-
-                    <div class="profile-section pb-5"> <!-- Προσωπικά δεδομένα -->
-                      <div class="profile-section-header d-flex justify-content-between">
-                        <h3 class="page-title-medium pb-5 "> Διαχείρηση προσωπικών δεδομένων</h3>
-                      </div>
                 
-                      <div class="container">
-                        <div class="row">
-                        <div class="col">
-                          <a class="profile-section-link" href="#"><img src="./assets/icons/delete-account-small.svg" width="24" height="24" alt=""><span>Διαγραφή Λογαριασμόυ</span></a>
+                        <!-- DATES CONTAINER -->
+                        <div class="container mt-3 pb-5">
+                          <div class="row justify-content-center input-daterange">
+                              <div class="col-sm-6 formfield">
+                                  <label for="startDate" class="formfield-label">Από</label>
+                                  <!-- <input id="startDate" class="form-control datetimepicker" type="date"  value="{{ start_date }}"/> -->
+                                  <input type="text" class="form-control" value="2012-04-05">
+                              </div>
+                              <div class="col-sm-6 formfield">
+                                  <label for="endDate" class="formfield-label">Έως</label>
+                                  <!-- <input id="endDate" class="form-control datetimepicker" type="date" /> -->
+                                  <input type="text" class="form-control" value="2012-04-19">
+
+                              </div>
+                          </div>
                         </div>
-                     
-
-
-                        <div class="col">
-                          <a class="profile-section-link" href="#"><img src="./assets/icons/donwload-pdf.svg" width="22" height="23" alt=""><span>Λήψη προσωπικών δεδομένων</span></a>
-                        </div>
-
-
-                        <div class="col">
-                          <a class="profile-section-link" href="#"><img src="./assets/icons/privacy.svg" width="23" height="26" alt=""><span>Πολιτική Απορρήτου</span></a>
-                        </div>
-                      </div>
-                    </div>
 
                     </div>
-
-
+                    <!-- /.login_wrapper-->
                   </div>
                 </div>
               </div>
             </div>
+            <div class="container">
+              <div class="row">
+                <div class="login_btn_wrapper">
+								<a href="#" class="login_btn bg-white bg-hover-black"> Αναζήτηση Ραντεβού </a>
+							</div>
+              </div>
+            </div>
+
+<!-- TABS NAVIGATION END -->
+
       <footer>
 
 
