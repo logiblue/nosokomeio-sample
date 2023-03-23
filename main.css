@@ -12,15 +12,10 @@ body {
 h1,h2,h3,h4,h5,h6,p {
     color: #000 !important;
 }
-
-
-/* _______________________ */
-/* GENERAL PAGES CLASS - UTILS */
-/* Utilities repeated in multiple sections */
-/* _______________________ */
-/* _______________________ */
-
-
+ul {
+  list-style-position: inside;
+}
+.custom-text-link{color: #FE0000;}
 .page-title{
     font-size: 36px;
     font-weight: 800;
@@ -38,6 +33,18 @@ h1,h2,h3,h4,h5,h6,p {
 }
 /* Header___________________________ */
 
+
+/* Navigation Links */
+.nav-link{
+  transition: all .3s;
+}
+.nav-link:hover{
+  color: #000 !important;
+  transition: all .225s;
+}
+
+
+
 /* CTA BUTTON IN HEADER */
 .cta-header{
     border: 1px solid #E3E3E3;
@@ -48,9 +55,14 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 800;
     line-height: 30px;
     margin-right: 25px;
+    transition: all .3s ease-out;
 }
 .cta-header img{ margin-right: 5px; margin-top: -3px;}
-
+.cta-header:hover{
+  background: #000;
+  transition: all .223s ease-in;
+  color: #fff;
+}
 /* Navbar - Mobile Menu Icon - Toggler */
 .navbar-toggler {
     width: 20px;
@@ -178,7 +190,7 @@ h1,h2,h3,h4,h5,h6,p {
 /* sm, md, lg, xl, and xxl. */
 
 
-.login_form_wrapper .login_form_container{
+.container-wrapper .login_form_container{
     background-color: #fff;
     padding: 40px 50px 0px 50px;
     border-radius: 20px;
@@ -198,6 +210,12 @@ h1,h2,h3,h4,h5,h6,p {
     color:#000;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-weight: 400 !important;
+    transition: all .2s;
+}
+.login_new_user:hover{
+  color: #FE0000;
+  transition: all .3s;
 }
 .login_new_user img{
     margin-right: 5px;
@@ -293,7 +311,7 @@ h1,h2,h3,h4,h5,h6,p {
     filter: invert(40%) sepia(100%) saturate(7444%) hue-rotate(357deg) brightness(92%) contrast(126%);
 }
 @media(max-width:600px){
-    .login_form_wrapper .login_form_container{
+    .container-wrapper .login_form_container{
         padding: 40px 15px 0px 15px;
     }
     .login_form_title{
@@ -360,16 +378,24 @@ h1,h2,h3,h4,h5,h6,p {
 
 
 /* Footer copyrights */
-.col.text-center.footer-copyrights-container {
-    display: flex;
-    justify-content: space-between;
+ .footer-copyrights-container {
     max-width: 500px;
     padding: 25px 0 100px 0;
     margin: 0 auto;
+    text-align: center !important;
 }
 .footer-copyrights-container-item{
+    color: #565656 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-weight: 400;
+}
+
+.footer-copyrights-container-item:hover{
     color: #000 !important;
     text-decoration: none !important;
+    text-align: center !important;
+    font-weight: 400;
 }
 
 /* FOOTER RESPONSIVE */
@@ -382,7 +408,7 @@ h1,h2,h3,h4,h5,h6,p {
     .footer-card-container{
         padding-left: 12px;
     }
-    .col.text-center.footer-copyrights-container {
+    .footer-copyrights-container {
         flex-direction: column;
         padding-top: 50px;
     }
@@ -505,7 +531,7 @@ h1,h2,h3,h4,h5,h6,p {
     padding-bottom: 15px;
 }
 .welcome-single__button{
-    max-width: 220px;
+    max-width: 250px;
     padding-top: 16px;
     padding-bottom: 14px;;
     padding-left: 22px;
@@ -715,7 +741,7 @@ outline: 3px solid transparent; /* For Windows high contrast mode. */
         padding-left: 0 !important;
         border-bottom: 0 !important;
     }
- 
+
      .ava-single-button-container{
         width: 100% !important;
         border:0 !important;
@@ -746,12 +772,14 @@ outline: 3px solid transparent; /* For Windows high contrast mode. */
 .profile-section-header{}
 .profile-section-link{
     text-decoration: none !important;
-    color: #000;
+    color: #565656;
     display: flex;
     align-items: center;
+    font-weight: 600 !important;
 }
 .profile-section-link:hover{
-    color: #565656;
+    color: #000;
+    text-decoration: underline !important;
 }
 .profile-section-link span{
     padding-left: 5px;
@@ -760,4 +788,34 @@ outline: 3px solid transparent; /* For Windows high contrast mode. */
     color: #FE0000;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+/* contacts */
+
+.add-new-contact{
+  border:1px solid #FE0000;
+  padding: 22px 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 60px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+  max-width: 444px !important;
+  cursor: pointer;
+  transition: all .16s ease-out;
+}
+.add-new-contact:hover{
+  background: #000;
+  color: #fff;
+  transition: all .16s ease-in;
+}
+@media(max-width:600px){
+  .add-new-contact{
+    max-width: 90% !important;
+    margin:0 auto;
+    font-size: 20px
+  }
 }
